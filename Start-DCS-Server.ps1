@@ -53,7 +53,7 @@ $SRSProcess = Start-Process -FilePath "$SRSFolder\SR-Server.exe" -PassThru
 $SRSPID = $SRSProcess.ID
 Write-Output "Started SRS. Process ID: $SRSPID"
 
-# Waiting 30 seconds before we enter the loop.
+# Waiting 15 seconds before entering the loop
 Start-Sleep -Seconds 15
 
 Do {
@@ -116,7 +116,7 @@ Write-Output "Waiting 30 seconds..."
 Start-Sleep -Seconds 30
 
 # Starting the script in another Powershell instance
-$NewProcess = $MyInvocation.InvocationName # This fetches the scripts name and location to be run again.
-Start-Process Powershell "$NewProcess"
+$NewProcess = $MyInvocation.MyCommand.Path # This fetches the scripts name and location to be run again.
+Start-Process Powershell -ArgumentList "`"-File`" `"$NewProcess`""
 
 Exit

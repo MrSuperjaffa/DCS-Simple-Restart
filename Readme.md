@@ -4,7 +4,7 @@ Author: Mr_Superjaffa#5430
         Contact me on Discord for assistance
 
 Description: This script starts DCS and SRS and tracks the process ID. Additionally it checks the log incase of soft locks.
-              In case of restart the script will run itself in a new Powershell window.
+              In case of restart the script will run itself in a new Powershell window. The script supports running multiple instances
 
 DISCLAIMER: Always be sure to double check scripts you download and only run scripts you trust.
             I Mr_Superjaffa take no responsibility for any damage or lost files caused by the execution of this script.
@@ -32,6 +32,8 @@ Usage: Place the files in a seperate folder, named however you like.
        Open a PowerShell window as Administrator and enter 'Set-ExecutionPolicy Unrestricted'
 
        Please take note that this will allow unsigned scripts to run on your machine.
+
+       Multiple Instances: Copy the script somewhere else and configure it appropriately. The second script will operate seperataly from any others.
        
 Task Scheduling: Here's an example of creating a task to auto run this script on machine logon:
 
