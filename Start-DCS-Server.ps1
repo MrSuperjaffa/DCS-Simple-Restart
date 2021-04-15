@@ -28,7 +28,7 @@ $MaxMissionTime = "21600"
 
 # DONT TOUCH BEYOND HERE
 $ErrorActionPreference = "SilentlyContinue"
-$VERSION = "v1.1.0"
+$VERSION = "v1.2.0"
 $CycleTime = 1 # This defines the time between checks
 $LogThreshold = 300 # This defines how long the dcs.log can remain unchanged before the script believes DCS has soft locked
 
