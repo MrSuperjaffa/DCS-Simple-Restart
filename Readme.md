@@ -1,4 +1,4 @@
-Basic DCS Restart Script v1.1.0
+Basic DCS Restart Script v1.2.0
 
 Author: Mr_Superjaffa#5430
         Contact me on Discord for assistance
